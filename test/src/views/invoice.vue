@@ -38,7 +38,7 @@ export default {
   ]),
   methods: {
     handleNavigation() {
-        Router.replace({name:"home", hash: '#/'})
+      Router.replace({ name: 'home', hash: '#/' });
     },
   },
   components: {

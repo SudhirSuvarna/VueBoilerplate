@@ -24,7 +24,7 @@ export default new Vuex.Store({
                            commit('SET_INVOICES', invoices);
                        }); */
     },
-    setInvoice({commit}, [index]) {
+    setInvoice({ commit }, [index]) {
       commit('SET_INVOICE', index);
     },
   },
@@ -34,7 +34,7 @@ export default new Vuex.Store({
     },
     SET_INVOICE(state, index) {
       state.invoice = state.invoices[index];
-      Router.replace({name:"invoice", hash: '#/'});
+      Router.replace({ name: 'invoice', hash: '#/' });
     },
   },
 });

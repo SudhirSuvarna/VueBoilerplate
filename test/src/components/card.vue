@@ -67,7 +67,7 @@ export default {
   name: 'card',
   props: {
     inputObj: Object,
-    type: String
+    type: String,
   },
 };
 

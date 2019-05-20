@@ -33,9 +33,9 @@ import { mapState } from 'vuex';
 import invoicecard from '@/components/invoicecard.vue';
 
 const lastCard = $('.card-list .card').length - 1;
-var index =  0;
+let index = 0;
 setTimeout(() => {
-  index =  $('.card-list .card').length - 1;
+  index = $('.card-list .card').length - 1;
   $('.down').click(() => {
     const prependList = function () {
       if ($('.card').hasClass('activeNow')) {
@@ -77,7 +77,7 @@ export default {
   },
   methods: {
     handleNavigation() {
-      this.$store.dispatch('setInvoice',[index]);
+      this.$store.dispatch('setInvoice', [index]);
     },
   },
   computed: mapState([
